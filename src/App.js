@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css" ;
+import { Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav/Nav.jsx";
+import Home from "./components/Home/Home.jsx";
+import Shotokan from "./components/Shotokan/Shotokan.jsx";
+import WskfArgentina from "./components/WskfArgentina/WskfArgentina.jsx";
+import WskfWorld from "./components/WskfWorld/WskfWorld.jsx";
+import Eventos from "./components/Eventos/Eventos.jsx";
+import Contacto from "./components/Contacto/Contacto.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav/>
+      <Routes>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/shotokan" element={<Shotokan/>}/>
+        <Route path="/wskfargentina" element={<WskfArgentina/>}/>
+        <Route path="/wskfworld" element={<WskfWorld/>}/>
+        <Route path="/eventos" element={<Eventos/>}/>
+        <Route path="/contacto" element={<Contacto/>}/>
+      </Routes>
     </div>
   );
 }
