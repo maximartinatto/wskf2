@@ -1,19 +1,25 @@
 import style from './Nav.module.css';
-import { NavLink } from 'react-router-dom';
-
+import logo from '../../assets/logo.jpeg'
 
 const Nav = () => {
     return (
-       <nav className={style.nav}>
-        <div className={style.btn}>
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/shotokan'>Shotokan</NavLink>
-            <NavLink to='/wskfargentina'>WSKF Argentina</NavLink>
-            <NavLink to='/wskfworld'>WSKF World</NavLink>
-            <NavLink to='/eventos'>Eventos</NavLink>
-            <NavLink to='/contacto'>Contacto</NavLink>
+       <div className={style.aside}>
+            <div className={style.logo}>
+                <img src={logo} href="/" alt='logo'></img>
+            </div>
+            <div className={style.titulo}>
+                <h1>WSKF ARGENTINA</h1>
+            </div>
+           <ul className={style.nav}>
+                <li><a href="/" class="active">HOME</a></li>
+                <li><a href="/shotokan">SHOTOKAN</a></li>
+                <li><a href="/wskfArgentina">WSKF ARGENTINA</a></li>
+                <li><a href="/wskfworld">WSKF WORLD</a></li>
+                <li><a href="/eventos">EVENTOS</a></li>
+                <li><a href="/contacto">CONTACTO</a></li>
+            </ul>
+           
         </div>
-       </nav>
     )
 }
 
