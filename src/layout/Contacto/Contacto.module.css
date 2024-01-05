@@ -1,0 +1,201 @@
+.containerContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../../assets/portadaContacto.jpg");
+    background-color: rgb(30, 30, 30);
+    background-blend-mode: soft-light;
+    height: 200vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.titleContact {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.formLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+}
+
+
+.linksContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    height: 95%;
+    width: 24%;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.contactDetails,
+.socialContact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.contactDetails h1,
+.socialContact h1,
+.containerForm form h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.containerForm form h1 {
+    margin-bottom: 16px;
+}
+
+.phone1,
+.emailContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.phone1 img,
+.emailContact img {
+    margin-right: 6px;
+    filter: invert(100%);
+    width: 1.6rem;
+    fill: goldenrod;
+}
+
+.sociaIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+.svgInsta {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 8px;
+    fill: goldenrod;
+    transition: 0.2s ease-in;
+}
+
+.svgInsta:hover {
+    fill: #e1306c;
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    height: 95%;
+    width: 70%;
+    margin-top: 5%;
+}
+
+.containerForm form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+}
+
+.nameEmail {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+h2{
+    color: #fff;
+}
+
+.contactName,
+.contactEmail,
+.contactText {
+    color: #fff;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.contactName,
+.contactEmail {
+    padding: 0.6rem 0.8rem;
+}
+
+.contactName {
+    margin-right: 10px;
+}
+
+.contactEmail {
+    margin-left: 10px;
+}
+
+.contactText {
+    padding: 0.6rem 0.8rem 5rem 0.8rem;
+    margin-top: 20px;
+}
+
+.buttonForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.buttonForm button {
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 2px solid #1e90ff;
+    border-radius: 100px 100px 100px 100px;
+    color: #1e90ff;
+    transition: 0.4s ease-in-out;
+}
+
+.buttonForm button:hover {
+    background-color: #1e90ff;
+    color: ghostwhite;
+}
+
+
+.successError {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.successMessage,
+.errorMessage {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 3%;
+    padding: 5px 12px;
+    border-radius: 8px;
+}
+
+.successMessage {
+    color: #26b80c;
+    border: 2px solid #26b80c;
+}
+
+.errorMessage {
+    color: #b80c0c;
+    border: 2px solid #b80c0c;
+}

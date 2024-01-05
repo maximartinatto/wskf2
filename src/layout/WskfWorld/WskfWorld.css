@@ -1,0 +1,29 @@
+.bgWskfWorld{
+    background-image: url("../../assets/fondoshotokanworld.jpeg");
+    background-color: rgb(30, 30, 30);
+    background-blend-mode: soft-light;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+.contentWskfWorld{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+.container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.description{
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #fff;
+}

@@ -1,0 +1,25 @@
+/* Estilos para tabletas (por ejemplo, hasta 768px) */
+@media screen and (max-width: 768px) {
+    .bgEventos {
+        flex-direction: column;
+        /* Cambiar a disposición vertical en tablets */
+    }
+
+    .contentTorneoNacional,
+    .contentSeminario {
+        max-width: 100%;
+        /* Ocupar todo el ancho disponible en tablets */
+    }
+}
+
+/* Estilos para dispositivos móviles (por ejemplo, hasta 480px) */
+@media screen and (max-width: 480px) {
+
+    .contentTorneoNacional,
+    .contentSeminario {
+        max-width: 100%;
+        /* Ocupar todo el ancho disponible en dispositivos móviles */
+        margin: 5px;
+        /* Reducir los márgenes en dispositivos móviles para mejor apariencia */
+    }
+}
