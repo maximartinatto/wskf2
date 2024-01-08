@@ -1,12 +1,12 @@
-import CardsTorneo from "../CardsTorneo/Cards";
+import CardsMundial from "../CardsMundial/Cards";
 
-import "./CarrouselTorneo.css";
+import "./CarrouselMundial.css";
 
 function Carrousel({ gallery }) {
     return (
         <div className="container">
 
-            <CardsTorneo gallery={gallery} />
+            <CardsMundial gallery={gallery} />
         </div>
     );
 }

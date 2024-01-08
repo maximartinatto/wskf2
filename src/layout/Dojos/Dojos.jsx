@@ -1,4 +1,9 @@
 import React from "react";
+import DojoShindokai1 from '../../assets/Dojos/DojoShindokai.jpeg';
+import DojoShindokai2 from '../../assets/Dojos/DojoShindokai2.jpeg';
+import DojoShoshinsha from '../../assets/Dojos/DojoShoshinsha.jpeg';
+import OkinawaDojo from '../../assets/Dojos/OkinawaDojo.jpeg';
+import Shindokai from '../../assets/Dojos/ShindokaiGuernica.jpeg'
 import "./Dojos.css";
 
 const Dojos = () => {
@@ -32,6 +37,7 @@ const Dojos = () => {
                     <li>Sensei Laura Dino 1er dan</li>
                     <li>Sensei Noelia Dino 1er dan</li>
                 </ul>
+                <img src={OkinawaDojo} alt="okinawa"/>
             </div>
             <div>
                 <h2>Shoshinsha Dojo - Gualeguaychu - Entre Rios</h2>
@@ -39,6 +45,7 @@ const Dojos = () => {
                     <h3>Instructor</h3>
                     <li>Sensei Cristian Nuñez 1er dan</li>
                 </ul>
+                <img src={DojoShoshinsha} alt="shoshinsha" />
             </div>
             <div>
                 <h2>Bushido Dojo - Pinamar - Buenos Aires</h2>
@@ -53,6 +60,7 @@ const Dojos = () => {
                     <h3>Instructor</h3>
                     <li>Sensei Sergio Canseco 3er dan</li>
                 </ul>
+                <img src={Shindokai} alt="shindokai" />
             </div>
             <div>
                 <h2>Shindokai Dojo - Longchamps - Buenos Aires</h2>
@@ -64,6 +72,8 @@ const Dojos = () => {
                     <li>Sensei Miriam Alderete 1er dan</li>
                     <li>Daniel Medina 1er kyu</li>
                 </ul>
+                <img src={DojoShindokai1} alt="shindokai 1" />
+                <img src={DojoShindokai2} alt="shindokai 2" />
             </div>
             <div>
                 <h2>Kaizen Dojo - Malvinas Argentinas - Buenos Aires</h2>

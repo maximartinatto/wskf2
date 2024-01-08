@@ -2,7 +2,7 @@ import CardsSeminario from "../CardsSeminario/Cards";
 
 import "./CarrouselSeminario.css";
 
-function Carousel({ gallery }) {
+function Carrousel({ gallery }) {
     return (
         <div className="container">
 
@@ -11,7 +11,7 @@ function Carousel({ gallery }) {
     );
 }
 
-export default Carousel;
+export default Carrousel;
 
 
 

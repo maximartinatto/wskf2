@@ -13,8 +13,11 @@
 .backgroundImage {
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
+    width: 90vw; /* Ancho del 90% de la ventana */
+    height: 90vw;
+    max-width: 1200px; /* Ancho máximo para evitar que se estire demasiado en pantallas grandes */
+   
 }
 
 .content {
@@ -22,12 +25,14 @@
 }
 
 .contentTorneoNacional,
-.contentSeminario {
+.contentSeminario,
+.contentMundial {
     display: flex;
-    flex: 1;
+    flex: 2;
+    width: 100%;
     max-width: 400px;
     margin: 10px;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -38,16 +43,19 @@
     color: #fff;
 }
 
-.container {
+.containerEventos {
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90vw; /* Ancho del 90% de la ventana */
+    max-width: 1200px; /* Ancho máximo para evitar que se estire demasiado en pantallas grandes */
+    margin: 0 auto; /* Centrar horizontalmente */
 }
 
 .description {
-    width: 50%;
+    width: 100%; /* Cambiado a 100% para ocupar el contenedor completo */
     font-size: 1.5rem;
     text-align: justify;
     color: #fff;
