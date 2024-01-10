@@ -17,7 +17,7 @@
 }
 
 .text {
-    color: white;
+    color: black;
     font-size: 35px;
     margin: 8px;
     font-weight: bold;
@@ -34,12 +34,17 @@
     mix-blend-mode: multiply;
 }
 .contentKasuya{
-    background-color: darkgray;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
     height: 100%;
+}
+.contentKasuya p{
+    color: black;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 .marginTop {
     margin-top: 24px;
