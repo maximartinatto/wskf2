@@ -51,7 +51,7 @@
 .contactDetails h1,
 .socialContact h1,
 .containerForm form h1 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -80,6 +80,12 @@
     fill: goldenrod;
 }
 
+.phone1 h2,
+.emailContact h2{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
 .sociaIcons {
     display: flex;
     flex-direction: row;
@@ -97,105 +103,13 @@
     fill: #e1306c;
 }
 
-.containerForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
-    height: 95%;
-    width: 70%;
-    margin-top: 5%;
+.svgFacebook{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 8px;
+    fill: goldenrod;
+    transition: 0.2s ease-in;
 }
-
-.containerForm form {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 80%;
-}
-
-.nameEmail {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-h2{
-    color: #fff;
-}
-
-.contactName,
-.contactEmail,
-.contactText {
-    color: #fff;
-    width: 100%;
-    font-size: 1.1rem;
-    border-radius: 8px;
-}
-
-.contactName,
-.contactEmail {
-    padding: 0.6rem 0.8rem;
-}
-
-.contactName {
-    margin-right: 10px;
-}
-
-.contactEmail {
-    margin-left: 10px;
-}
-
-.contactText {
-    padding: 0.6rem 0.8rem 5rem 0.8rem;
-    margin-top: 20px;
-}
-
-.buttonForm {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.buttonForm button {
-    width: 50%;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border: 2px solid #1e90ff;
-    border-radius: 100px 100px 100px 100px;
-    color: #1e90ff;
-    transition: 0.4s ease-in-out;
-}
-
-.buttonForm button:hover {
-    background-color: #1e90ff;
-    color: ghostwhite;
-}
-
-
-.successError {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.successMessage,
-.errorMessage {
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-    margin-top: 3%;
-    padding: 5px 12px;
-    border-radius: 8px;
-}
-
-.successMessage {
-    color: #26b80c;
-    border: 2px solid #26b80c;
-}
-
-.errorMessage {
-    color: #b80c0c;
-    border: 2px solid #b80c0c;
+.svgFacebook:hover{
+    fill: #e1306c;
 }

@@ -5,7 +5,7 @@
     gap: 1rem;
     margin: 1rem;
     display:grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     
     grid-column-gap: .5rem;
     grid-row-gap: 2rem;
