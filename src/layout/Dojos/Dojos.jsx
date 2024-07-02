@@ -1,4 +1,5 @@
 import React from "react";
+import KaizenDojo1 from '../../assets/Dojos/Kaizen1.jpeg';
 import DojoShindokai1 from '../../assets/Dojos/DojoShindokai.jpeg';
 import DojoShindokai2 from '../../assets/Dojos/DojoShindokai2.jpeg';
 import DojoShoshinsha from '../../assets/Dojos/DojoShoshinsha.jpeg';
@@ -17,6 +18,7 @@ const Dojos = () => {
                     <li>Sensei Matias Centini 3er dan</li>
                     <li>Sensei Juan Armesto 2do dan</li>
                     <li>Sensei Nancy Sosa 1er dan</li>
+                    <li>Sensei Maximiliano Pejkovic 1er dan</li>
                 </ul>
                 
             </div>
@@ -25,9 +27,12 @@ const Dojos = () => {
                 <ul>
                     <h3>Instructores</h3>
                     <li>Sensei Juan Ignacio Ike 3er dan</li>
+                    <li>Sensei Virgina Ike 1er dan</li>
                     <li>Sensei Franco Garcia 1er dan</li>
                     <li>Sensei Alexis Arguello</li>
+                    <li>Sensei Claudio Escobar</li>
                 </ul>
+                <img src={KaizenDojo1} alt="kaizen1"/>
             </div>
             <div>
                 <h2>Okinawa Dojo - Oberà - Misiones</h2>
@@ -70,18 +75,15 @@ const Dojos = () => {
                     <li>Sensei Andres Martinez 2do dan</li>
                     <li>Sensei Pablo Garcia 1er dan</li>
                     <li>Sensei Miriam Alderete 1er dan</li>
-                    <li>Daniel Medina 1er kyu</li>
+                    <li>Daniel Medina</li>
+                    <li>Aldana Castagneti</li>
+                    <li>Payla Pantano</li>
+                    <li>Rodrigo Fernandez</li>
                 </ul>
                 <img src={DojoShindokai1} alt="shindokai 1" />
                 <img src={DojoShindokai2} alt="shindokai 2" />
             </div>
-            <div>
-                <h2>Kaizen Dojo - Malvinas Argentinas - Buenos Aires</h2>
-                <ul>
-                    <h3>Instructor</h3>
-                    <li>Sensei Kevin Videla 2do dan</li>
-                </ul>
-            </div>
+           
         </div>
     )
 }
