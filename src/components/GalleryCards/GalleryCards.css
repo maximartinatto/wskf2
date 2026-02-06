@@ -1,0 +1,44 @@
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* ajusta según el ancho disponible */
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.gallery-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 250px; /* más alto para que no recorte tanto */
+  object-fit: contain; /* podés cambiar a "contain" si querés que no se corte nada */
+}
+
+.gallery-info {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.gallery-location {
+  font-size: 14px;
+  color: #666;
+}
+
