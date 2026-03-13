@@ -1,42 +1,71 @@
 import React from "react";
-import "./Home.css";
-import "./HomeResponsive.css"
 import logo from "../../assets/logo.jpeg";
-import Kasuya from "../../assets/Kasuya.jpeg"
+import Kasuya from "../../assets/Kasuya.jpeg";
 
 const Home = () => {
   return (
-    <div className="bgHome" id="home">
-      <div className="contentHome" data-aos="zoom-in" data-aos-duration="1500">
-        <img className="logo" src={logo} alt="logo escuela" />
+    <section className="container-fluid py-5 bg-light" id="home">
 
-        <div className="textHome">
-          <p className="textName">WSKF ARGENTINA</p>
-        </div>
+      {/* Header */}
+      <div className="text-center mb-5">
+
+        <img
+          src={logo}
+          alt="logo escuela"
+          className="img-fluid mb-3"
+          style={{ maxWidth: "150px" }}
+        />
+
+        <h1 className="fw-bold">WSKF ARGENTINA</h1>
+
       </div>
-      <div className="contentKasuya" data-aos="fade-up" data-aos-duration="1500">
-        <div className="description marginTop">
-          <h2>Hitoshi Kasuya</h2>
-          <h3>INSTRUCTOR JEFE DE WSKF  9º Dan</h3>
-          <p>
-            Nacido en 1948, Sensei Hitoshi Kasuya se graduó del riguroso curso de formación de instructores especialistas de la JKA en 1973, a cargo de Nakayama Sensei. Fue alumno de la Universidad de Hosei (Tokio) donde se destacó en el University Karate Club como capitán del equipo.
 
-            Kasuya Sensei sobresalió en estos primeros años en el campo relativamente nuevo del kárate deportivo (de competición). En 1975 compitió en el 1er Campeonato Mundial de la Federación Internacional de Karate Amateur (IAKF) celebrado en los EE. UU., donde  Kasuya Sensei ganó el 1er lugar tanto en kata (formas) como en kumite (lucha) integrando el equipo nacional de Japòn. Kasuya Sensei repitió esta hazaña con el equipo japonés 2 años más tarde cuando se celebraron los Campeonatos del Mundo en Japón.
+      {/* Sección Kasuya */}
+      <div className="container">
 
-            En 1980 y 1982, Kasuya Sensei tuvo brillantes actuaciones en los Campeonatos Mundiales de WUKO (ahora WKF ).
+        <div className="row align-items-center g-5">
 
-            En 1983 participò del 1er Campeonato Mundial de SKI en Japón y ganó el 1er lugar en kata individual y el 1er lugar en kumite por equipos. Del mismo modo, en 1985, en el segundo Campeonato Mundial de SKI, ganó tanto en kumite individual como en kumite por equipos.
+          {/* Texto */}
+          <div className="col-12 col-lg-6">
 
-          </p>
-        </div>
-        <div className="marginTop">
-          <div className="contentImg">
-            <img className="iconImg" alt="imagen" src={Kasuya} />
+            <h2 className="fw-bold">Hitoshi Kasuya</h2>
+            <h4 className="text-muted mb-3">
+              INSTRUCTOR JEFE DE WSKF 9º Dan
+            </h4>
+
+            <p className="text-secondary">
+              Nacido en 1948, Sensei Hitoshi Kasuya se graduó del riguroso curso de formación
+              de instructores especialistas de la JKA en 1973, a cargo de Nakayama Sensei.
+              Fue alumno de la Universidad de Hosei (Tokio) donde se destacó en el University
+              Karate Club como capitán del equipo.
+            </p>
+
+            <p className="text-secondary">
+              En 1975 compitió en el 1er Campeonato Mundial de la IAKF en Estados Unidos,
+              donde ganó el 1er lugar tanto en kata como en kumite integrando el equipo
+              nacional de Japón.
+            </p>
+
           </div>
+
+          {/* Imagen */}
+          <div className="col-12 col-lg-6 text-center">
+
+            <img
+              src={Kasuya}
+              alt="Kasuya"
+              className="img-fluid rounded shadow"
+              style={{ maxWidth: "400px" }}
+            />
+
+          </div>
+
         </div>
+
       </div>
-    </div>
-  )
-}
+
+    </section>
+  );
+};
 
 export default Home;

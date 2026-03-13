@@ -1,14 +1,19 @@
 import Cards from "../Cards/Cards";
 
-import "./Carrousel.css";
-
 function Carousel({ gallery }) {
-    return (
-        <div className="container">
+  return (
+    <section className="container py-5">
 
-            <Cards gallery={gallery} />
+      <div className="row justify-content-center">
+
+        <div className="col-12">
+          <Cards gallery={gallery} />
         </div>
-    );
+
+      </div>
+
+    </section>
+  );
 }
 
 export default Carousel;

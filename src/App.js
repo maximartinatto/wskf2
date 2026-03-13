@@ -1,4 +1,4 @@
-import "./App.css" ;
+
 import AOS from "aos";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Cursor from "./components/cursor/mousemove"

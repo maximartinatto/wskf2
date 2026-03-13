@@ -1,12 +1,12 @@
-import {useState} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
   faChevronRight,
   faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import "./Cards.css";
-const Cards = ({gallery}) => {
+
+const Cards = ({ gallery }) => {
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
 
@@ -32,47 +32,63 @@ const Cards = ({gallery}) => {
   };
 
   return (
-    <div>
+    <div className="container my-4">
+
+      {/* MODAL */}
       {openModal && (
-        <div className="slider">
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            className="btnNext"
-            onClick={nextSlide}
-            size="2x"
-          />
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            className="btnPrev"
-            onClick={prevSlide}
-            size="2x"
-          />
+        <div className="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center z-3">
+
           <FontAwesomeIcon
             icon={faCircleXmark}
-            className="btnClose"
-            onClick={handleCloseModal}
             size="2x"
+            className="position-absolute top-0 end-0 m-4 text-white cursor-pointer"
+            onClick={handleCloseModal}
           />
-          <div className="fullScreenImage">
-            <img src={gallery[slideNumber].img} alt="" />
-          </div>
+
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            size="2x"
+            className="position-absolute start-0 ms-4 text-white"
+            onClick={prevSlide}
+          />
+
+          <img
+            src={gallery[slideNumber].img}
+            alt=""
+            className="img-fluid rounded"
+            style={{ maxHeight: "80vh" }}
+          />
+
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            size="2x"
+            className="position-absolute end-0 me-4 text-white"
+            onClick={nextSlide}
+          />
         </div>
       )}
 
-      <div className="img-container">
+      {/* GALERIA */}
+      <div className="row g-3">
         {gallery &&
-          gallery.map((slide, index) => {
-            return (
-              <div
-                className="single"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={slide.img} alt="slide" />
+          gallery.map((slide, index) => (
+            <div
+              key={index}
+              className="col-6 col-md-4 col-lg-3"
+              onClick={() => handleOpenModal(index)}
+            >
+              <div className="card border-0 shadow-sm h-100">
+                <img
+                  src={slide.img}
+                  alt="slide"
+                  className="card-img-top img-fluid"
+                  style={{ cursor: "pointer" }}
+                />
               </div>
-            );
-          })}
+            </div>
+          ))}
       </div>
+
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import CardsSeminario from "../CardsSeminario/Cards";
+import CardsMundial2025 from "../CardsMundial2025/Cards";
 
 function Carrousel({ gallery }) {
   return (
@@ -7,7 +7,7 @@ function Carrousel({ gallery }) {
       <div className="row justify-content-center">
 
         <div className="col-12 col-md-10 col-lg-9">
-          <CardsSeminario gallery={gallery} />
+          <CardsMundial2025 gallery={gallery} />
         </div>
 
       </div>
@@ -17,17 +17,3 @@ function Carrousel({ gallery }) {
 }
 
 export default Carrousel;
-
-
-
-
-
-
-
-
-
-
-
-
-
-

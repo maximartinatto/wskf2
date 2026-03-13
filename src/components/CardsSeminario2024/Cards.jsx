@@ -15,7 +15,9 @@ const Cards = ({ gallery }) => {
     setOpenModal(true);
   };
 
-  const handleCloseModal = () => setOpenModal(false);
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
 
   const prevSlide = () => {
     slideNumber === 0
@@ -31,7 +33,6 @@ const Cards = ({ gallery }) => {
 
   return (
     <div className="container py-4">
-
       {/* Modal visor */}
       {openModal && (
         <div className="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center">
@@ -66,7 +67,6 @@ const Cards = ({ gallery }) => {
             style={{ cursor: "pointer" }}
             onClick={nextSlide}
           />
-
         </div>
       )}
 
@@ -77,8 +77,8 @@ const Cards = ({ gallery }) => {
             <div
               key={index}
               className="col-6 col-md-4 col-lg-3"
-              style={{ cursor: "pointer" }}
               onClick={() => handleOpenModal(index)}
+              style={{ cursor: "pointer" }}
             >
               <img
                 src={slide.img}
@@ -88,7 +88,6 @@ const Cards = ({ gallery }) => {
             </div>
           ))}
       </div>
-
     </div>
   );
 };

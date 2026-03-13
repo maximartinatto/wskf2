@@ -2,43 +2,44 @@ import React from "react";
 import GalleryDojo from "../../utills/dojosGallery";
 import CarrouselDojo from "../../components/CarrouselDojos/CarrouselDojo";
 import logo from "../../assets/logo.jpeg";
-import "./Dojos.css";
-
-const Gallery = ({ title, images, description, component }) => {
-  return (
-    <div className={`content${component}`}>
-      <h1>{title}</h1>
-      <div className="carouselContainer">
-        {component === "Dojos" && <CarrouselDojo gallery={images} />}
-      </div>
-      <p className={`description${component}`}>{description}</p>
-    </div>
-  );
-};
 
 const Dojos = () => {
   return (
-    <div className="bgHome" id="home">
-      <div className="contentHome" data-aos="zoom-in" data-aos-duration="1500">
-        <img className="logo" src={logo} alt="logo escuela" />
-        <div className="textHome">
-          <p className="textName">Dojos</p>
+    <section className="container-fluid py-5 bg-light" id="dojos">
+
+      <div className="container">
+
+        {/* HEADER */}
+        <div
+          className="text-center mb-5"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <img
+            src={logo}
+            alt="logo escuela"
+            className="img-fluid mb-3"
+            style={{ maxWidth: "120px" }}
+          />
+
+          <h1 className="fw-bold">
+            Dojos
+          </h1>
         </div>
+
+        {/* CARROUSEL */}
+        <div className="row justify-content-center">
+
+          <div className="col-lg-10">
+            <CarrouselDojo gallery={GalleryDojo} />
+          </div>
+
+        </div>
+
       </div>
 
-      <div className="contentGallerys">
-        <div className="galleryDojos">
-          <Gallery
-            title="Dojos"
-            images={GalleryDojo}
-            description=""
-            component="Dojos"
-          />
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 
 export default Dojos;
-

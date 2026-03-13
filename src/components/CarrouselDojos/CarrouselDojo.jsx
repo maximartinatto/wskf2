@@ -2,9 +2,17 @@ import GalleryCards from "../GalleryCards/GalleryCards";
 
 const CarrouselDojo = ({ gallery }) => {
   return (
-    <div>
-      <GalleryCards gallery={gallery} />
-    </div>
+    <section className="container py-5">
+
+      <div className="row justify-content-center">
+
+        <div className="col-12">
+          <GalleryCards gallery={gallery} />
+        </div>
+
+      </div>
+
+    </section>
   );
 };
 

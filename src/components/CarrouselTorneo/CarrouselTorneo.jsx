@@ -1,14 +1,19 @@
 import CardsTorneo from "../CardsTorneo/Cards";
 
-import "./CarrouselTorneo.css";
-
 function Carrousel({ gallery }) {
-    return (
-        <div className="container">
+  return (
+    <section className="container py-5">
 
-            <CardsTorneo gallery={gallery} />
+      <div className="row justify-content-center">
+
+        <div className="col-12 col-md-10 col-lg-9">
+          <CardsTorneo gallery={gallery} />
         </div>
-    );
+
+      </div>
+
+    </section>
+  );
 }
 
 export default Carrousel;

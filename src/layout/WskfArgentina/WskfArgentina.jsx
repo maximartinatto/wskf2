@@ -1,34 +1,80 @@
-import "./WskfArgentina.css"
-import React from 'react'
-import imgWskf from '../../assets/wskfArgentina.jpeg'
-import img from '../../assets/fondolandingpage.jpeg'
+import React from "react";
+import imgWskf from "../../assets/wskfArgentina.jpeg";
+import img from "../../assets/fondolandingpage.jpeg";
 
 const WskfArgentina = () => {
-    return (
-        <section className="sectionWskfArgentina" id="wskf">
-            <div className="contentWskfArgentina" data-aos="fade-up" data-aos-duration="1500">
-                <div className="description marginTop">
-                    <p>
-                        Nuestra misión es difundir la práctica del karate como una opción de salud a nivel físico y emocional a través de actividades multidisciplinarias que incluyen el desarrollo técnico, físico, formativo y recreativo, principalmente en niños y jóvenes que buscan un espacio de expresión y de apoyo que les dé seguridad.
+  return (
+    <section className="container-fluid py-5 bg-light" id="wskf">
 
-                        Lograr que nuestros dojos sean la instancia líder en el ámbito deportivo marcial, en el cual, el karate do esté al alcance de toda la comunidad y sea parte integral de su forma de vida, contribuyendo a que todos los alumnos cuenten con mejores niveles de salud, educación, desarrollo físico, defensa personal, estabilidad emocional, buena conducta y relación social apropiada
+      <div className="container">
 
+        <div className="row align-items-center g-5">
 
-                        Somos los únicos representantes para Argentina de World Shotokan Karate Do Federation, una organización que está presente en más de 90 países y cuenta con más de 500,000 miembros en todo el mundo. La organización está encabezada por el Instructor Jefe 9no Dan, Sensei Hitoshi Kasuya.
+          {/* TEXTO */}
+          <div className="col-12 col-lg-7">
 
-                        EI Director Nacional de W.S.K.F. Argentina es Sensei Oscar Quaranta, 4to Dan.
+            <h2 className="fw-bold mb-4">
+              WSKF Argentina
+            </h2>
 
-                    </p>
-                </div>
-                <div className="marginTop">
-                    <div className="contentImg">
-                        <img className="iconImg" alt="imagen" src={imgWskf}/> 
-                        <img className="iconImg" alt="imagen" src={img}/>
-                    </div>
-                </div>
+            <p className="text-secondary">
+              Nuestra misión es difundir la práctica del karate como una opción
+              de salud física y emocional a través de actividades
+              multidisciplinarias que incluyen el desarrollo técnico, físico,
+              formativo y recreativo, especialmente en niños y jóvenes.
+            </p>
+
+            <p className="text-secondary">
+              Buscamos que nuestros dojos sean una instancia líder en el ámbito
+              deportivo marcial, donde el karate do esté al alcance de toda la
+              comunidad y forme parte integral de su estilo de vida.
+            </p>
+
+            <p className="text-secondary">
+              Somos los únicos representantes en Argentina de la
+              World Shotokan Karate Do Federation, organización presente en
+              más de 90 países con más de 500.000 miembros en todo el mundo.
+            </p>
+
+            <p className="text-secondary">
+              La organización está encabezada por el Instructor Jefe
+              9º Dan Sensei Hitoshi Kasuya y en Argentina es dirigida por
+              el Director Nacional Sensei Oscar Quaranta 4º Dan.
+            </p>
+
+          </div>
+
+          {/* IMÁGENES */}
+          <div className="col-12 col-lg-5">
+
+            <div className="row g-3">
+
+              <div className="col-12">
+                <img
+                  src={imgWskf}
+                  alt="WSKF Argentina"
+                  className="img-fluid rounded shadow"
+                />
+              </div>
+
+              <div className="col-12">
+                <img
+                  src={img}
+                  alt="WSKF"
+                  className="img-fluid rounded shadow"
+                />
+              </div>
+
             </div>
-        </section>
-    )
-}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+};
 
 export default WskfArgentina;

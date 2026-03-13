@@ -1,4 +1,3 @@
-import SenseiAlexis from "../assets/Dojos/alexisArguello.jpg";
 import SenseiDiego from "../assets/Dojos/diegoFleitas.jpg";
 import SenseiFabian from "../assets/Dojos/fabianGonzalez.jpg";
 import SenseiFranco from "../assets/Dojos/francoGarcia.jpg";
@@ -11,15 +10,10 @@ import SenseiJulian from "../assets/Dojos/julianDalzotto.jpg";
 import SenseiMatias from "../assets/Dojos/matiasCentini.jpg";
 import SenseiNancy from "../assets/Dojos/nancySosa.jpg";
 import SenseiPedro from "../assets/Dojos/pedroFinos.jpg";
-import SenseiVirginia from "../assets/Dojos/virginiaIke.jpg";
 import SenseiJuan from "../assets/Dojos/juanArmesto.jpg";
 
 const galleryDojos = [
-  {
-    img: SenseiAlexis,
-    name: "Sensei Alexis Arguello",
-    location: "Venado Tuerto, Santa Fe, Argentina",
-  },
+  
   {
     img: SenseiDiego,
     name: "Sensei Diego Fleitas",
@@ -80,11 +74,7 @@ const galleryDojos = [
     name: "Sensei Pedro Finos",
     location: "Venado Tuerto, Santa Fe, Argentina",
   },
-  {
-    img: SenseiVirginia,
-    name: "Sensei Virginia Ike",
-    location: "Venado Tuerto, Santa Fe, Argentina",
-  },
+  
   {
     img: SenseiJuan,
     name: "Sensei Juan Armesto",
