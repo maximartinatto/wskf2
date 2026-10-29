@@ -6,12 +6,12 @@ const WskfWorld = () => {
   const wskfWorld = Gallery;
 
   return (
-    <section className="container-fluid py-5 bg-light" id="WskfWorld">
+    <section className="page-section container-fluid py-5 bg-light" id="WskfWorld">
 
       <div className="container">
 
         <div
-          className="text-center mb-5"
+          className="page-header text-center mb-5"
           data-aos="zoom-in"
           data-aos-duration="1500"
         >

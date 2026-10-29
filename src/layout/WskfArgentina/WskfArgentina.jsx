@@ -4,11 +4,11 @@ import img from "../../assets/fondolandingpage.jpeg";
 
 const WskfArgentina = () => {
   return (
-    <section className="container-fluid py-5 bg-light" id="wskf">
+    <section className="page-section container-fluid py-5 bg-light" id="wskf">
 
       <div className="container">
 
-        <div className="row align-items-center g-5">
+        <div className="row align-items-center g-4 g-lg-5">
 
           {/* TEXTO */}
           <div className="col-12 col-lg-7">
@@ -45,11 +45,11 @@ const WskfArgentina = () => {
           </div>
 
           {/* IMÁGENES */}
-          <div className="col-12 col-lg-5">
+          <div className="col-12 col-lg-4 g-lg-5">
 
             <div className="row g-3">
 
-              <div className="col-12">
+              <div className="col-12 col-md-6 col-lg-12">
                 <img
                   src={imgWskf}
                   alt="WSKF Argentina"
@@ -57,7 +57,7 @@ const WskfArgentina = () => {
                 />
               </div>
 
-              <div className="col-12">
+              <div className="col-12 col-md-6 col-lg-12">
                 <img
                   src={img}
                   alt="WSKF"

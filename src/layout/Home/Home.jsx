@@ -4,10 +4,10 @@ import Kasuya from "../../assets/Kasuya.jpeg";
 
 const Home = () => {
   return (
-    <section className="container-fluid py-5 bg-light" id="home">
+    <section className="page-section container-fluid py-5 bg-light" id="home">
 
       {/* Header */}
-      <div className="text-center mb-5">
+      <div className="page-header text-center mb-5">
 
         <img
           src={logo}
@@ -23,7 +23,7 @@ const Home = () => {
       {/* Sección Kasuya */}
       <div className="container">
 
-        <div className="row align-items-center g-5">
+        <div className="row align-items-center g-4 g-lg-5">
 
           {/* Texto */}
           <div className="col-12 col-lg-6">
@@ -54,8 +54,8 @@ const Home = () => {
             <img
               src={Kasuya}
               alt="Kasuya"
-              className="img-fluid rounded shadow"
-              style={{ maxWidth: "400px" }}
+              className="portrait img-fluid rounded shadow"
+
             />
 
           </div>

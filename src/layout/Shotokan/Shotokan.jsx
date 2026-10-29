@@ -3,11 +3,11 @@ import Gichin from "../../assets/gichin.jpg";
 
 const Shotokan = () => {
   return (
-    <section className="container-fluid py-5 bg-light" id="shotokan">
+    <section className="page-section container-fluid py-5 bg-light" id="shotokan">
 
       <div className="container">
 
-        <div className="row align-items-start g-5">
+        <div className="row align-items-start g-4 g-lg-5">
 
           {/* TEXTO */}
           <div className="col-12 col-lg-7">
@@ -59,8 +59,8 @@ const Shotokan = () => {
             <img
               src={Gichin}
               alt="Gichin Funakoshi"
-              className="img-fluid rounded shadow"
-              style={{ maxWidth: "400px" }}
+              className="portrait img-fluid rounded shadow"
+
             />
 
           </div>

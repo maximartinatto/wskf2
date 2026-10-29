@@ -55,13 +55,13 @@ const Gallery = ({ title, images, description, type }) => {
 
 const Evento = () => {
   return (
-    <section className="container-fluid py-5 bg-light" id="home">
+    <section className="page-section container-fluid py-5 bg-light" id="eventos">
 
       <div className="container">
 
         {/* HEADER */}
         <div
-          className="text-center mb-5"
+          className="page-header text-center mb-5"
           data-aos="zoom-in"
           data-aos-duration="1500"
         >

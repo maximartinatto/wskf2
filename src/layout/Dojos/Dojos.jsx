@@ -5,13 +5,13 @@ import logo from "../../assets/logo.jpeg";
 
 const Dojos = () => {
   return (
-    <section className="container-fluid py-5 bg-light" id="dojos">
+    <section className="page-section container-fluid py-5 bg-light" id="dojos">
 
       <div className="container">
 
         {/* HEADER */}
         <div
-          className="text-center mb-5"
+          className="page-header text-center mb-5"
           data-aos="zoom-in"
           data-aos-duration="1500"
         >
@@ -30,7 +30,7 @@ const Dojos = () => {
         {/* CARROUSEL */}
         <div className="row justify-content-center">
 
-          <div className="col-lg-10">
+          <div className="col-12">
             <CarrouselDojo gallery={GalleryDojo} />
           </div>
 

@@ -1,4 +1,5 @@
 
+import { useEffect } from "react";
 import AOS from "aos";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Cursor from "./components/cursor/mousemove"
@@ -13,14 +14,29 @@ import Eventos from "./layout/Eventos/Eventos.jsx";
 import Contacto from "./layout/Contacto/Contacto.jsx";
 
 function App() {
-  AOS.init();
   const location = useLocation();
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 600,
+      disable: () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    });
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.refresh();
+  }, [location.pathname]);
+
   return (
     <div className="App">
-      {location.pathname === '/' ? <LandingPage/> : <Nav/>}
+      <a className="skip-link" href="#main-content">Ir al contenido</a>
+      {location.pathname !== '/' && <Nav/>}
       <Cursor/>
-      
+      <main id="main-content" tabIndex={-1}>
       <Routes>
+        <Route path="/" element={<LandingPage/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/wskfargentina" element={<WskfArgentina/>}/>
         <Route path="/wskfworld" element={<WskfWorld/>}/>
@@ -29,6 +45,7 @@ function App() {
         <Route path="/dojos" element={<Dojos/>}/>
         <Route path="/contacto" element={<Contacto/>}/>
       </Routes>
+      </main>
      
     </div>
   );

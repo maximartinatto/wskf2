@@ -1,0 +1,85 @@
+:root {
+  --page-space: clamp(1.5rem, 4vw, 3rem);
+  --grid-space: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+html { scroll-padding-top: 5rem; -webkit-text-size-adjust: 100%; }
+body { min-width: 0; margin: 0; overflow-wrap: break-word; background: var(--bs-light); }
+.App { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+#main-content { flex: 1; min-width: 0; }
+img { max-width: 100%; height: auto; }
+.page-section { padding-block: var(--page-space) !important; }
+.page-section p { line-height: 1.75; }
+.page-section h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
+.page-section h2 { font-size: clamp(1.4rem, 3.5vw, 2rem); }
+.page-header { margin-bottom: var(--page-space) !important; }
+.portrait { width: min(100%, 25rem); }
+
+.landing-page {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: max(1.5rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1.5rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
+}
+.landing-content { width: 100%; max-width: 30rem; }
+.landing-logo { width: clamp(7rem, 30vw, 12.5rem); }
+
+.site-nav .navbar-brand { white-space: normal; font-size: clamp(1rem, 4vw, 1.25rem); }
+.site-nav .navbar-toggler { min-width: 48px; min-height: 48px; flex-shrink: 0; }
+.site-nav .nav-link { display: flex; align-items: center; min-height: 48px; padding-inline: 0.75rem !important; }
+.site-nav .nav-link.active { color: #fff; text-decoration: underline; text-underline-offset: 0.3em; }
+
+.photo-grid, .dojo-grid { display: grid; gap: var(--grid-space); min-width: 0; }
+.photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.dojo-grid { grid-template-columns: minmax(0, 1fr); }
+.photo-thumbnail {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: #e9ecef;
+  aspect-ratio: 4 / 3;
+  touch-action: manipulation;
+}
+.photo-thumbnail img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.dojo-grid .card { min-width: 0; overflow: hidden; }
+.dojo-photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; }
+.dojo-grid .card-title { font-size: 1.15rem; line-height: 1.4; }
+
+.contact-channels { max-width: 64rem; }
+.contact-channel { min-height: 7.5rem; transition: border-color 150ms ease, box-shadow 150ms ease; }
+.contact-channel:hover { border-color: var(--bs-secondary); box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1) !important; }
+.contact-channel-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; }
+.contact-channel-details { min-width: 0; }
+.contact-channel h2 { font-size: 1.25rem; }
+.landing-page .btn { min-height: 48px; max-width: 100%; }
+:where(a, button, input, textarea):focus-visible { outline: 3px solid #0d6efd; outline-offset: 3px; }
+
+.skip-link { position: fixed; top: 0.5rem; left: 0.5rem; z-index: 10000; padding: 0.75rem 1rem; color: #fff; background: #212529; transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+.custom-cursor { position: fixed; top: 0; left: 0; width: 24px; height: 24px; border-radius: 50%; background: #212529; pointer-events: none; opacity: 0; z-index: 9999; }
+.yarl__root { --yarl__button_padding: 12px; --yarl__toolbar_padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) 8px; }
+.yarl__button { min-width: 48px; min-height: 48px; }
+
+@media (min-width: 576px) {
+  .dojo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 768px) {
+  .photo-grid, .dojo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1200px) {
+  .photo-grid, .dojo-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 1199.98px) {
+  .site-nav .navbar-collapse { max-height: calc(100vh - 4rem); max-height: calc(100dvh - 4rem); overflow-y: auto; overscroll-behavior: contain; }
+  .site-nav .navbar-nav { padding-block: 0.5rem; }
+}
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  [data-aos] { opacity: 1 !important; transform: none !important; }
+}
